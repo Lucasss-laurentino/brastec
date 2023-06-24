@@ -1,0 +1,50 @@
+.navbar-personalizado {
+
+    background-color:  #221E2F;
+    padding-top: 20px;
+    
+}
+
+.input-personalizado {
+
+    width: 50%;
+    color: white;
+    background-color: #221E2F;
+    border: none;
+    border-bottom: 1px solid white;
+
+}
+
+.input-personalizado::placeholder {
+    font-size: 14px;
+}
+
+@media (max-width: 359px) {
+
+    .input-personalizado::placeholder {
+        font-size: 12px;
+    }
+    
+}
+
+.btn-search-personalizado {
+
+    border: none;
+    background-color: #221E2F;
+
+}
+
+.btn-search-personalizado:hover {
+
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 4px;
+
+}
+
+.btn-menu-personalizado {
+
+    background-color: transparent;
+    border: none;
+
+}

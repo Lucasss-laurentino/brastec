@@ -1,0 +1,12 @@
+.div-personalizada {
+
+    height: 92vh;
+
+    background-color: #221E2F;
+
+    background-image: url('./capa.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
