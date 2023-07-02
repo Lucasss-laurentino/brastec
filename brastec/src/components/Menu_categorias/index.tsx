@@ -1,6 +1,10 @@
+import { useContext, useEffect } from 'react';
 import './Menu_categorias.css';
+import { CategoriaEmExibicaoContext } from '../../Contexts/CategoriaEmExibicao';
 
 export const Menu_categorias = () => {
+
+    const { selecionarId } = useContext(CategoriaEmExibicaoContext);
 
     const mouseDentro = (id: string) => {
 
@@ -25,9 +29,9 @@ export const Menu_categorias = () => {
 
         <>
 
-            <div className="container-fluid div-lista-menu-personalizada">
+            <div className="container-fluid div-lista-menu-personalizada" id="div-lista-categorias">
                 <ul className="list-inline lista-icones-categorias-personalizada">
-                    <li className="list-inline-item mx-4 lista-item-personalizado" onMouseEnter={() => mouseDentro('categoria1')} onMouseLeave={() => mouseFora('categoria1')}>
+                    <li className="list-inline-item mx-4 lista-item-personalizado" onClick={() => selecionarId(1)} onMouseEnter={() => mouseDentro('categoria1')} onMouseLeave={() => mouseFora('categoria1')}>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
                             <g id="categoria1" fill="#221E2F" transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
                                 <path d="M1337 5109 c-130 -31 -231 -140 -257 -278 -14 -74 -14 -4468 0 -4542
@@ -51,7 +55,7 @@ export const Menu_categorias = () => {
                             </g>
                         </svg>
                     </li>
-                    <li className="list-inline-item mx-4 lista-item-personalizado" onMouseEnter={() => mouseDentro('categoria2')} onMouseLeave={() => mouseFora('categoria2')}>
+                    <li className="list-inline-item mx-4 lista-item-personalizado" onClick={() => selecionarId(2)} onMouseEnter={() => mouseDentro('categoria2')} onMouseLeave={() => mouseFora('categoria2')}>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
                             <g fill="#221E2F" id="categoria2" transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)">
                             <path d="M1233 5099 c-74 -23 -134 -67 -185 -134 -64 -84 -70 -114 -79 -365
@@ -143,7 +147,7 @@ export const Menu_categorias = () => {
                             </g>
                         </svg>
                     </li>
-                    <li className="list-inline-item mx-4 lista-item-personalizado" onMouseEnter={() => mouseDentro('categoria3')} onMouseLeave={() => mouseFora('categoria3')} >
+                    <li className="list-inline-item mx-4 lista-item-personalizado" onClick={() => selecionarId(3)} onMouseEnter={() => mouseDentro('categoria3')} onMouseLeave={() => mouseFora('categoria3')} >
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
                             <g fill="#221E2F" id="categoria3" transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
                             stroke="none">

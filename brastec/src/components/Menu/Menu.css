@@ -4,13 +4,12 @@
     display: flex;
     justify-content: end;
     position: absolute;
-
+    z-index: 2;
     background-color:#221E2F;
 
 }
 
 .lista-menu-user {
-    
     position: relative;
     list-style: none;
     flex-direction: column;

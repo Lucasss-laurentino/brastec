@@ -29,7 +29,7 @@ export const Navbar = () => {
     return (
 
         <>
-        <div className="position-relative navbar-largura">
+        <div className="position-relative navbar-largura" id="navbar">
             <div className="container-fluid px-0 navbar-personalizado d-flex justify-content-between">
                 <div className="container d-flex px-3 justify-content-start align-self-center p-0">
                     <button type="button" className="btn-search-personalizado">
