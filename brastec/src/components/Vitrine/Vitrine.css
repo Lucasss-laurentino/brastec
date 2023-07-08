@@ -1,4 +1,4 @@
 .vitrine-personalizada {
-    height: 90vh;
+    max-height: auto;
     background-color:  #221E2F;
 }

@@ -10,17 +10,6 @@ export const Pagina_inicial = () => {
 
     const { id } = useContext(CategoriaEmExibicaoContext);
 
-    useEffect(() => {
-
-        if(id != 0) {
-            const obj = document.getElementById('div-lista-categorias')?.scrollIntoView({behavior: "smooth"});
-        } else {
-            const obj = document.getElementById('navbar')?.scrollIntoView();
-        }
-
-
-    }, [id])
-
     return(
         <React.Fragment>
 
@@ -30,7 +19,9 @@ export const Pagina_inicial = () => {
 
                 <Banner /> {/* Menu categorias está sendo renderizado aqui dentro */}
 
-                <Vitrine /> {/* Lista de marcas está sendo renderizado aqui dentro */}
+                {id != 0 && <Vitrine /> }{/* Lista de marcas está sendo renderizado aqui dentro */}
+
+                
             
             </div>
 

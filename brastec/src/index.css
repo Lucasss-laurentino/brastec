@@ -20,3 +20,7 @@ code {
 .font-android {
   font-family: 'android';
 }
+
+#root {
+  background-color: #221E2F;
+}

@@ -5,6 +5,7 @@ import { CategoriaEmExibicaoContext } from '../../Contexts/CategoriaEmExibicao';
 export const Menu_categorias = () => {
 
     const { selecionarId } = useContext(CategoriaEmExibicaoContext);
+    const { id } = useContext(CategoriaEmExibicaoContext);
 
     const mouseDentro = (id: string) => {
 

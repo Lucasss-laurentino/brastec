@@ -1,0 +1,108 @@
+.linha{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.cartao {
+    display: flex;
+    margin-top: 5%;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #2f2a3d;
+    border-radius: 20px;
+}
+
+.titulo-responsivo {
+
+    color: white;
+
+}
+
+.texto-responsivo {
+
+    color: white;
+
+    margin: 0;
+
+}
+
+
+/* - IMAGEM - */
+
+.imagem {
+    display: flex;
+    justify-content: end;
+}
+
+.imagem > img {
+
+    width: 80%;
+
+}
+
+@media(min-width: 295px) {
+    .cartao {
+        width: 100%;
+    }
+
+    .titulo-responsivo {
+        font-size: 15px;
+    }
+
+    .texto-responsivo {
+        font-size: 12px;
+    }
+
+    .imagem {
+        width: 40%;
+    }
+}
+
+@media(min-width: 435px) {
+
+    .titulo-responsivo {
+        font-size: 22px;
+    }
+
+    .texto-responsivo {
+        font-size: 16px;
+    }
+
+    .imagem {
+        width: 50%;
+    }
+}
+
+@media(min-width: 620px) {
+
+    .titulo-responsivo {
+        font-size: 27px;
+    }
+
+    .texto-responsivo {
+        font-size: 20px;
+    }
+
+    .imagem {
+        width: 60%;
+    }
+}
+
+@media(min-width: 839px) {
+    .cartao {
+        max-width: 830px;
+    }
+
+    .titulo-responsivo {
+        font-size: 30px;
+    }
+
+    .texto-responsivo {
+        font-size: 24px;
+    }
+
+    .imagem {
+        width: 40%;
+    }
+}
