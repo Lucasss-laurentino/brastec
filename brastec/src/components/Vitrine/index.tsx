@@ -3,6 +3,7 @@ import './Vitrine.css';
 import { Card } from '../Card';
 import { useContext, useEffect } from 'react';
 import { CategoriaEmExibicaoContext } from '../../Contexts/CategoriaEmExibicao';
+import { Paginacao } from '../Paginacao';
 
 export const Vitrine = () => {
     
@@ -28,6 +29,8 @@ export const Vitrine = () => {
                 <ListaMarcas/>
 
                 <Card/>
+
+                <Paginacao/>
 
             </div>
 

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './Card.css';
-import Product from '../types/Product';
+import Product from '../../types/Product';
 import React from 'react';
 
 export const Card = () => {
@@ -41,9 +41,9 @@ export const Card = () => {
     return (
 
         <>
-            {products.map(produto => {
+            {products.map((produto, index) => {
                 return (
-                    <React.Fragment>
+                    <React.Fragment key={index}>
                       <div className="linha">
                             <div className="cartao">
                                 <div className="info">

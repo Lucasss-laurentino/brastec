@@ -1,0 +1,41 @@
+.linha-paginacao {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.lista-de-paginacao {
+    width: 90%;
+    padding: 0;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: white;
+}
+
+.item-inativo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+    align-items: center;
+    text-align: center;
+    background-color:  #2f2a3d;
+    border: 1px solid #221E2F;
+    border-radius: 5px;
+}
+
+.ativa {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+    align-items: center;
+    text-align: center;
+    background-color:  #221E2F;
+    border: 1px solid #2f2a3d;
+    border-radius: 5px;
+}
+
