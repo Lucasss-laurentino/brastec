@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './Card.css';
 import Product from '../../types/Product';
 import React from 'react';
+import { ModalProduto } from '../ModalProduto';
 
 export const Card = () => {
 
@@ -38,14 +39,27 @@ export const Card = () => {
 
     ]);
 
+    const [abrirModalProduto, setAbrirModalProduto] = useState<boolean>(false);
+
+    const [produtoClicado, setProdutoClicado] = useState<Product | undefined>();
+
     return (
 
         <>
+            <ModalProduto 
+                abrirModalProduto={abrirModalProduto} 
+                produtoClicado={produtoClicado} 
+                setAbrirModalProduto={setAbrirModalProduto}
+            />
+
             {products.map((produto, index) => {
                 return (
                     <React.Fragment key={index}>
                       <div className="linha">
-                            <div className="cartao">
+                            <div className="cartao" onClick={() => {
+                                setAbrirModalProduto(true)
+                                setProdutoClicado(produto)
+                            }}>
                                 <div className="info">
                                     <h1 className='titulo-responsivo'>{produto.nome}</h1>
                                     <p className='texto-responsivo'>{produto.preco}</p>
